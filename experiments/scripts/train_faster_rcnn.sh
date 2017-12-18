@@ -39,6 +39,15 @@ case ${DATASET} in
     ANCHORS="[4,8,16,32]"
     RATIOS="[0.5,1,2]"
     ;;
+# abcsup
+  wider)
+    TRAIN_IMDB="WIDER_train"
+    TEST_IMDB="WIDER_val"
+    STEPSIZE="[50000]"
+    ITERS=10000
+    ANCHORS="[8,16,32]"
+    RATIOS="[0.5,1,2]"
+    ;;
   *)
     echo "No dataset given"
     exit
